@@ -1,0 +1,12 @@
+Can you give a rough estimate of how long Bubble Sort and Merge Sort
+will take for 50,000 elements? What factors would go into whether your
+ estimate would be high or low? Picking different algorithms to solve a
+ problem can lead to significant differences in application performance at scale.
+
+- Bubble sort depends on the initial positions of elements within the set. If the set is nearly sorted in the beginning, with minimal
+  mixups, then bubble_sort should work fairly fast. Worst case scenario is when the set is sorted in reverse, causing the algorithm to
+  run at O(n^2)
+
+ Approximately how long do you estimate it will take to run this for 100,000 elements?
+ - Given that 10x the elements causes the bubble sort to take 100% (8.00 -> 991.810) more time, and
+ minor experimentation with the sorting code, the runtime might take 4x longer than the 50,000 test case
