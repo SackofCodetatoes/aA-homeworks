@@ -1,0 +1,15 @@
+SELECT *
+FROM movies
+WHERE id == 6;
+
+SELECT *
+FROM movies
+WHERE year >= 2000 AND year <= 2010;
+
+SELECT *
+FROM movies
+WHERE NOT(year >= 2000 AND year <= 2010);
+
+SELECT *
+FROM movies
+LIMIT 5;

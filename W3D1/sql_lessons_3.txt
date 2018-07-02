@@ -1,0 +1,15 @@
+SELECT *
+FROM movies
+WHERE title LIKE "%toy story%"
+
+SELECT *
+FROM movies
+WHERE director = "John Lasseter"
+
+SELECT *
+FROM movies
+WHERE director != "John Lasseter"
+
+SELECT *
+FROM movies
+WHERE title LIKE "%WALL-%"

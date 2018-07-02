@@ -1,0 +1,15 @@
+SELECT title, (domestic_sales + international_sales)/1000000 AS Combined_Sales
+FROM movies
+  JOIN boxoffice
+    ON movie_id = id;
+
+SELECT title, (rating * 10) AS Rating
+FROM movies
+  JOIN boxoffice
+    ON movie_id = id;
+
+SELECT title, year
+FROM movies
+  JOIN boxoffice
+    ON movie_id = id
+WHERE year % 2 = 0;
