@@ -5,7 +5,10 @@ class UsersController < ApplicationController
     @user = User.new(user_params)
     if @user.save
       login_user!(@user)
-      redirect_to cats_url
+      msg = UserMailer.welcome_email(@user)
+      msg.deliver
+
+      redirect_to @url
     else
       flash.now[:errors] = @user.errors.full_messages
       render :new
@@ -18,7 +21,7 @@ class UsersController < ApplicationController
   end
 
   private
-  
+
   def user_params
     params.require(:user).permit(:password, :username)
   end
