@@ -134,7 +134,7 @@ label {
  .hamburger-dropdown ul {
    position: relative;
  }
- .hamburger-dropdown:hover {
+ .hamburger-dropdown:hover ul {
    display: block;
  }
 
