@@ -1,0 +1,6 @@
+abc
+\d2
+\.
+[cfm]an
+[^bog]og
+[A-C][n-p][a-c]
