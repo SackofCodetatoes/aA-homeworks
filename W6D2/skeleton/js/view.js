@@ -21,21 +21,22 @@ View.prototype.exercise0 = function () {
 View.prototype.exercise1 = function () {
   //Challenge: Give every square the class 'orange'
   //Result: Every square should turn orange (we already have a CSS rule)
+    $('li').addClass('orange');
 
-  //your code here!
 };
 
 View.prototype.exercise2 = function () {
   //Challenge: Remove every square
   //Result: Every square vanishes
-
+  $('.square').remove();
   //your code here!
 };
 
 View.prototype.exercise3 = function () {
   //Challenge: Add an <h1> with the text 'i love jquery' under the grid.
   //Result: An <h1> with the text 'i love jquery' appears under the grid.
-
+  const h1 = $("<h1>").text("I love jQuery");
+  $("#easel").append(h1);
   //your code here!
 };
 
